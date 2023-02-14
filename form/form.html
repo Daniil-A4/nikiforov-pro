@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="form.js"></script>
+  <title>Document</title>
+</head>
+<body>
+
+  <form id="form" action="javascript:">
+    <input name="label" id="input" type="text">
+    <button>submit</button>
+  </form>
+
+
+  <form class="quiz-form" action="thanks.php" method="post">
+    <input type="hidden" name="formname" value="test">
+    <div class="quiz-progress">
+        <p class="fz14">
+            Ви відповідаєте <span class="fw6">на <span class="js-quiz-progress">1</span> питання</span> з 5
+        </p>
+
+        <div class="quiz-progress__bar">
+            <div class="quiz-progress__inner" style="width: 12%;"></div>
+        </div>
+    </div>
+
+    <div class="quiz-items">
+        <div class="quiz-item" style="/*display: none*/">
+            <h3 class="fz36 fw6 tac mb">
+                Ремонт якого об'єкту вас цікавить?
+            </h3>
+
+            <div class="quiz-options quiz-options--three">
+                <label for="quiz1-1" class="quiz-option">
+                    <input type="radio" class="quiz-option__input" name="quiz1" id="quiz1-1" value="Квартира">
+
+                    <div class="quiz-option__wrapper">
+                        <div class="quiz-option__img">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/quiz1-1.jpg" alt="квартира">
+                        </div>
+
+                        <div class="quiz-option__checkbox">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-gray.png" alt="птичка">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="птичка">
+                        </div>
+                    </div>
+
+                    <p class="fz24">
+                        Квартира
+                    </p>
+                </label>
+                <label for="quiz1-2" class="quiz-option">
+                    <input type="radio" class="quiz-option__input" name="quiz1" id="quiz1-2" value="Дiм">
+
+                    <div class="quiz-option__wrapper">
+                        <div class="quiz-option__img">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/quiz1-2.jpg" alt="дом">
+                        </div>
+
+                        <div class="quiz-option__checkbox">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-gray.png" alt="птичка">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="птичка">
+                        </div>
+                    </div>
+
+                    <p class="fz24">
+                        Дiм
+                    </p>
+                </label>
+                <label for="quiz1-3" class="quiz-option">
+                    <input type="radio" class="quiz-option__input" name="quiz1" id="quiz1-3" value="Нежитлове/Комерція">
+
+                    <div class="quiz-option__wrapper">
+                        <div class="quiz-option__img">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/quiz1-3.jpg" alt="офис">
+                        </div>
+
+                        <div class="quiz-option__checkbox">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-gray.png" alt="птичка">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="птичка">
+                        </div>
+                    </div>
+
+                    <p class="fz24">
+                        Нежитлове/Комерція
+                    </p>
+                </label>
+            </div>
+        </div>
+        <div class="quiz-item" style="display:none;">
+            <h3 class="fz36 fw6 tac mb">
+                Вкажіть загальну площу, кв.
+            </h3>
+
+            <div class="quiz-options quiz-options--inline">
+                <label for="quiz2-1" class="quiz-option">
+                    <input type="radio" class="quiz-option__input" name="quiz2" id="quiz2-1" value="до 30">
+
+                    <div class="quiz-option__wrapper">
+                        <div class="quiz-option__checkbox">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-gray.png" alt="птичка">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="птичка">
+                        </div>
+
+                        <p class="fz18">
+                            до 30
+                        </p>
+                    </div>
+                </label>
+                <label for="quiz2-2" class="quiz-option">
+                    <input type="radio" class="quiz-option__input" name="quiz2" id="quiz2-2" value="вiд 70 до 90">
+
+                    <div class="quiz-option__wrapper">
+                        <div class="quiz-option__checkbox">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-gray.png" alt="птичка">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="птичка">
+                        </div>
+
+                        <p class="fz18">
+                            вiд 70 до 90
+                        </p>
+                    </div>
+                </label>
+                <label for="quiz2-3" class="quiz-option">
+                    <input type="radio" class="quiz-option__input" name="quiz2" id="quiz2-3" value="вiд 30 до 50">
+
+                    <div class="quiz-option__wrapper">
+                        <div class="quiz-option__checkbox">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-gray.png" alt="птичка">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="птичка">
+                        </div>
+
+                        <p class="fz18">
+                            вiд 30 до 50
+                        </p>
+                    </div>
+                </label>
+                <label for="quiz2-4" class="quiz-option">
+                    <input type="radio" class="quiz-option__input" name="quiz2" id="quiz2-4" value="вiд 90 до 110">
+
+                    <div class="quiz-option__wrapper">
+                        <div class="quiz-option__checkbox">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-gray.png" alt="птичка">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="птичка">
+                        </div>
+
+                        <p class="fz18">
+                            вiд 90 до 110
+                        </p>
+                    </div>
+                </label>
+                <label for="quiz2-5" class="quiz-option">
+                    <input type="radio" class="quiz-option__input" name="quiz2" id="quiz2-5" value="вiд 50 до 70">
+
+                    <div class="quiz-option__wrapper">
+                        <div class="quiz-option__checkbox">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-gray.png" alt="#">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="#">
+                        </div>
+
+                        <p class="fz18">
+                            вiд 50 до 70
+                        </p>
+                    </div>
+                </label>
+                <label for="quiz2-6" class="quiz-option">
+                    <input type="radio" class="quiz-option__input" name="quiz2" id="quiz2-6" value="бiльше 110">
+
+                    <div class="quiz-option__wrapper">
+                        <div class="quiz-option__checkbox">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-gray.png" alt="#">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="#">
+                        </div>
+
+                        <p class="fz18">
+                            бiльше 110
+                        </p>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="quiz-item" style="display: none">
+            <h3 class="fz36 fw6 tac mb">
+                Який вид ремонту Вас цікавить?
+            </h3>
+
+            <div class="quiz-options quiz-options--four">
+                <label for="quiz4-1" class="quiz-option">
+                    <input type="radio" class="quiz-option__input" name="quiz4" id="quiz4-1" value="Косметичний ремонт">
+
+                    <div class="quiz-option__wrapper">
+                        <div class="quiz-option__img">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/quiz4-1.jpg" alt="#">
+                        </div>
+
+                        <div class="quiz-option__checkbox">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-gray.png" alt="#">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="#">
+                        </div>
+                    </div>
+
+                    <div class="quiz-hint-wrapper">
+                        <p class="fz18">
+                            Косметичний ремонт
+                        </p>
+
+                        <div class="hint">
+                            <div class="hint-icon">
+                                <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/hint.png" alt="#">
+                            </div>
+
+                            <div class="hint-hover">
+                                <p class="fz16">
+                                    
+Підготовка стін під шпалери/фарбування<br>
+Поклейка шпалер/фарбування стін<br>
+Монтаж стель під фарбування.
+Укладання підлогового покриття
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+                <label for="quiz4-2" class="quiz-option">
+                    <input type="radio" class="quiz-option__input" name="quiz4" id="quiz4-2" value="Капітальний ремонт">
+
+                    <div class="quiz-option__wrapper">
+                        <div class="quiz-option__img">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/quiz4-2.jpg" alt="#">
+                        </div>
+
+                        <div class="quiz-option__checkbox">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-gray.png" alt="#">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="#">
+                        </div>
+                    </div>
+
+                    <div class="quiz-hint-wrapper">
+                        <p class="fz18">
+                           Капітальний ремонт
+                        </p>
+
+                        <div class="hint">
+                            <div class="hint-icon">
+                                <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/hint.png" alt="#">
+                            </div>
+
+                            <div class="hint-hover">
+                                <p class="fz16">
+                                    Демонтажні роботи<br>
+Монтаж електрики<br>
+Монтаж сантехніки<br>
+Заливка стяжки<br>
+Зведення перегородок/штукатурні роботи/ГКЛ<br>
+Монтаж внутрішньої вентиляції<br>
+Чистове оздоблення стін<br>
+Монтаж стель будь-якої складності<br>
+Укладання підлогового покриття<br>
+Укладання плитки
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+                <label for="quiz4-3" class="quiz-option">
+                    <input type="radio" class="quiz-option__input" name="quiz4" id="quiz4-3" value="Ремонт дизайн-проекту">
+
+                    <div class="quiz-option__wrapper">
+                        <div class="quiz-option__img">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/quiz4-3.jpg" alt="#">
+                        </div>
+
+                        <div class="quiz-option__checkbox">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-gray.png" alt="#">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="#">
+                        </div>
+                    </div>
+
+                    <div class="quiz-hint-wrapper">
+                        <p class="fz18">
+                            Ремонт дизайн-проекту
+                        </p>
+
+                        <div class="hint">
+                            <div class="hint-icon">
+                                <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/hint.png" alt="#">
+                            </div>
+
+                            <div class="hint-hover">
+                                <p class="fz16">
+Весь перелік робіт варіанта<br>
+“КАПІТАЛЬНИЙ РЕМОНТ”<br>
+а також:<br>
+Робота з дизайну проекту<br>
+Робота з рідкісними (ексклюзивними) матеріалами<br>
+Застосування нестандартних рішень у ремонті<br>
+Робота в стислий термін
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+                <label for="quiz4-4" class="quiz-option">
+                    <input type="radio" class="quiz-option__input" name="quiz4" id="quiz4-4" value="Не знаю, потрібна консультація">
+
+                    <div class="quiz-option__wrapper">
+                        <div class="quiz-option__img">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/quiz4-4.jpg" alt="#">
+                        </div>
+
+                        <div class="quiz-option__checkbox">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-gray.png" alt="#">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="#">
+                        </div>
+                    </div>
+
+                    <div class="quiz-hint-wrapper">
+                        <p class="fz18 tac">
+                            Не знаю, <br>
+                            потрібна консультація
+                        </p>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="quiz-item" style="display: none">
+            <h3 class="fz36 fw6 tac mb">
+               Ви вже маєте дизайн-проект?
+            </h3>
+
+            <div class="quiz-options quiz-options--three">
+                <label for="quiz5-1" class="quiz-option">
+                    <input type="radio" class="quiz-option__input" name="quiz5" id="quiz5-1" value="Так">
+
+                    <div class="quiz-option__wrapper">
+                        <div class="quiz-option__img">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/quiz5-1.jpg" alt="#">
+                        </div>
+
+                        <div class="quiz-option__checkbox">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-gray.png" alt="#">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="#">
+                        </div>
+                    </div>
+
+                    <p class="fz24">
+                        Так
+                    </p>
+                </label>
+                <label for="quiz5-2" class="quiz-option">
+                    <input type="radio" class="quiz-option__input" name="quiz5" id="quiz5-2" value="Ні і не буде">
+
+                    <div class="quiz-option__wrapper">
+                        <div class="quiz-option__img">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/quiz5-2.jpg" alt="#">
+                        </div>
+
+                        <div class="quiz-option__checkbox">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-gray.png" alt="#">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="#">
+                        </div>
+                    </div>
+
+                    <p class="fz24">
+                        Ні і не буде
+                    </p>
+                </label>
+                <label for="quiz5-3" class="quiz-option">
+                    <input type="radio" class="quiz-option__input" name="quiz5" id="quiz5-3" value="Планую замовити">
+
+                    <div class="quiz-option__wrapper">
+                        <div class="quiz-option__img">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/quiz5-3.jpg" alt="#">
+                        </div>
+
+                        <div class="quiz-option__checkbox">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-gray.png" alt="#">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="#">
+                        </div>
+                    </div>
+
+                    <p class="fz24">
+                        Планую замовити
+                    </p>
+                </label>
+            </div>
+        </div>
+        <div class="quiz-item" style="display:none;">
+            <h3 class="fz36 fw6 tac mb">
+              Коли плануєте розпочати ремонт?
+            </h3>
+
+            <div class="quiz-options quiz-options--inline">
+                <label for="quiz6-1" class="quiz-option">
+                    <input type="radio" class="quiz-option__input" name="quiz6" id="quiz6-1" value="Протягом тижня (дуже терміново)">
+
+                    <div class="quiz-option__wrapper">
+                        <div class="quiz-option__checkbox">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-gray.png" alt="#">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="#">
+                        </div>
+
+                        <p class="fz18">
+                            Протягом тижня (дуже терміново)
+                        </p>
+                    </div>
+                </label>
+                <label for="quiz6-2" class="quiz-option">
+                    <input type="radio" class="quiz-option__input" name="quiz6" id="quiz6-2" value="Протягом місяця (не так уже й терміново)">
+
+                    <div class="quiz-option__wrapper">
+                        <div class="quiz-option__checkbox">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-gray.png" alt="#">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="#">
+                        </div>
+
+                        <p class="fz18">
+                           Протягом місяця (не так уже й терміново)
+                        </p>
+                    </div>
+                </label>
+                <label for="quiz6-3" class="quiz-option">
+                    <input type="radio" class="quiz-option__input" name="quiz6" id="quiz6-3" value="Чекаємо на ключі від квартири">
+
+                    <div class="quiz-option__wrapper">
+                        <div class="quiz-option__checkbox">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-gray.png" alt="#">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="#">
+                        </div>
+
+                        <p class="fz18">
+                           Чекаємо на ключі від квартири
+                        </p>
+                    </div>
+                </label>
+                <label for="quiz6-4" class="quiz-option">
+                    <input type="radio" class="quiz-option__input" name="quiz6" id="quiz6-4" value="Просто цікавлюсь">
+
+                    <div class="quiz-option__wrapper">
+                        <div class="quiz-option__checkbox">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-gray.png" alt="#">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="#">
+                        </div>
+
+                        <p class="fz18">
+                            Просто цікавлюсь
+                        </p>
+                    </div>
+                </label>
+            </div>
+        </div>
+<!--
+        <div class="quiz-item" style="display: none">
+            <h3 class="fz36 fw6 tac mb">
+                Почти готово! Какой бонус вы бы хотели получить?
+            </h3>
+
+            <div class="quiz-options quiz-options--three">
+                <label for="quiz7-1" class="quiz-option">
+                    <input type="radio" class="quiz-option__input" name="quiz7" id="quiz7-1" value="Страхование квартиры на год">
+
+                    <div class="quiz-option__wrapper">
+                        <div class="quiz-option__img">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/quiz7-1.jpg" alt="#">
+                        </div>
+
+                        <div class="quiz-option__checkbox">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-gray.png" alt="#">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="#">
+                        </div>
+                    </div>
+
+                    <p class="fz18">
+                        Страхование квартиры на год
+                    </p>
+                </label>
+                <label for="quiz7-2" class="quiz-option">
+                    <input type="radio" class="quiz-option__input" name="quiz7" id="quiz7-2" value="Клининг квартиры от профи">
+
+                    <div class="quiz-option__wrapper">
+                        <div class="quiz-option__img">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/quiz7-2.jpg" alt="#">
+                        </div>
+
+                        <div class="quiz-option__checkbox">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-gray.png" alt="#">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="#">
+                        </div>
+                    </div>
+
+                    <p class="fz18">
+                        Клининг квартиры от профи
+                    </p>
+                </label>
+                <label for="quiz7-3" class="quiz-option">
+                    <input type="radio" class="quiz-option__input" name="quiz7" id="quiz7-3" value="Сертификат на фотосессию в студии">
+
+                    <div class="quiz-option__wrapper">
+                        <div class="quiz-option__img">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/quiz7-3.jpg" alt="#">
+                        </div>
+
+                        <div class="quiz-option__checkbox">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-gray.png" alt="#">
+                            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="#">
+                        </div>
+                    </div>
+
+                    <p class="fz18 tac">
+                        Сертификат на фотосессию <br>
+                        в студии
+                    </p>
+                </label>
+            </div>
+        </div>
+-->
+        <div class="quiz-item quiz-semifinal" style="display: none">
+            <div class="quiz-semifinal__wrapper">
+                <h3 class="fz60 fw6 msm">
+                    Останній крок
+                </h3>
+<p class="fz30 mbm">
+ми закріпили за Вами бонус
+</p>                        <p class="fz30 mbm">
+                    Отримайте розрахунок на вказаний сайт.
+                     Вами месенджер.
+                </p>
+
+                <p class="fz30 mbm">
+                    Це вас нічого не зобов'язує!
+                </p>
+
+                <p class="fz27 mbs">
+                    Куди вам зручніше отримати розрахунок?
+                </p>
+
+                <div class="quiz-socials">
+                    
+                    <label for="viber" class="quiz-social is-viber">
+                        <input class="quiz-social__input" checked="" type="radio" name="social" id="viber" value="Viber">
+                        <div class="quiz-social__wrapper">
+                            <div class="quiz-social__img">
+                                <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/viber.png" alt="#">
+                            </div>
+                            <div class="quiz-social__text fz14 tac">
+                                Viber
+                            </div>
+                        </div>
+                    </label>
+                    <label for="telegram" class="quiz-social is-telegram">
+                        <input class="quiz-social__input" type="radio" name="social" id="telegram" value="Telegram">
+                        <div class="quiz-social__wrapper">
+                            <div class="quiz-social__img">
+                                <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/telegram.png" alt="#">
+                            </div>
+                            <div class="quiz-social__text fz14 tac">
+                                Telegram
+                            </div>
+                        </div>
+                    </label>
+                    <label for="whatsapp" class="quiz-social is-whatsapp">
+                        <input class="quiz-social__input"  type="radio" name="social" id="whatsapp" value="Whatsapp">
+                        <div class="quiz-social__wrapper">
+                            <div class="quiz-social__img">
+                                <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/whatsapp.png" alt="#">
+                            </div>
+                            <div class="quiz-social__text fz14 tac">
+                                Whatsapp
+                            </div>
+                        </div>
+                    </label>
+                </div>
+  <input type="text" class="input quiz-semifinal__input fz18" placeholder="Ваше ім'я" name="name" required="">
+                <input type="tel" class="input quiz-semifinal__input fz18" placeholder="Ваш телефон Viber" name="phone" required="">
+
+                <button class="btn">
+                    <span class="btn-blick"></span>
+                    <span class="btn-text fz15 ttu">
+                       Отримати результат
+                    </span>
+                </button>
+
+                <label for="form-check1" class="policy">
+                    <input type="checkbox" class="rhide" required="" checked="" name="formcheck" id="form-check1">
+                    <span class="policy__check">
+                    <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/check-light.png" alt="#">
+                </span>
+
+                    <span class="policy__text fz12">
+                      <a href="#modal-politics" class="link js-btn">
+                          Ви погоджуєтесь з умовами обробки персональних даних
+                      </a>
+                    </span>
+                </label>
+            </div>
+
+            <div class="quiz-semifinal__img">
+                <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/quiz-semifinal.png" alt="#">
+            </div>
+        </div>
+    </div>
+
+    <div class="quiz-bottom">
+        <button class="btn quiz-btn quiz-btn--prev" style="display:none;">
+            <span class="btn-text fz16 ttu">
+                Назад
+            </span>
+        </button>
+        <button class="btn btn--arrows quiz-btn quiz-btn--next" disabled="">
+            <span class="btn-blick"></span>
+            <div class="quiz-btn__hint fz15">Дайте відповідь на запитання вище</div>
+            <span class="btn-text fz16 fw6 ttu">Далi</span>
+            <div class="btn-arrows">
+                <div class="btn-arrow btn-arrow-1">
+                    <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/btn-arrow.png" alt="#">
+                </div>
+                <div class="btn-arrow btn-arrow-2">
+                    <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/btn-arrow.png" alt="#">
+                </div>
+                <div class="btn-arrow btn-arrow-3">
+                    <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/btn-arrow.png" alt="#">
+                </div>
+            </div>
+        </button>
+    </div>
+</form>
+  
+</body>
+</html>
