@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icons';
   src:
-    url('fonts/icons.ttf?imia4g') format('truetype'),
-    url('fonts/icons.woff?imia4g') format('woff'),
-    url('fonts/icons.svg?imia4g#icons') format('svg');
+    url('fonts/icons.ttf?1xhn8j') format('truetype'),
+    url('fonts/icons.woff?1xhn8j') format('woff'),
+    url('fonts/icons.svg?1xhn8j#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+._icon-01:before {
+  content: "\e903";
+}
+._icon-02:before {
+  content: "\e904";
+}
+._icon-03:before {
+  content: "\e905";
+}
+._icon-04:before {
+  content: "\e906";
+}
+._icon-05:before {
+  content: "\e907";
+}
+._icon-06:before {
+  content: "\e908";
+}
+/* ._icon-check2:before {
+  content: "\e902";
+}
+._icon-check:before {
+  content: "\e901";
+} */
 ._icon-star_icon:before {
   content: "\e900";
 }
@@ -42,3 +66,4 @@
 ._icon-arrow-right2:before {
   content: "\ea3c";
 }
+

@@ -1,374 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="icons.css">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-	<title>NIKIFOROV PRO</title>
-	<script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="icons.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="radio-list.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    
+
+
+  <title>NIKIFOROV PRO</title>
+  <script defer src="script.js"></script>
 </head>
+
 <body>
-	<div class="wrapper">
-		<header class="header">
-			<div class="header__container _container">
-				<div class="header__body">
-					<div class="header__top">
-						<div class="header__logo logo">
-							<a href="#" class="logo__link">
-								<img src="./image/header/logo.jpg" alt="logo">
-							</a>
-							<p class="logo__text">Ремонт під ключ <br> у Києві та області</p>
-						</div>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container _container">
+        <div class="header__body">
+          <div class="header__top">
+            <div class="header__logo logo">
+              <a href="#" class="logo__link">
+                <img src="./image/header/logo.jpg" alt="logo">
+              </a>
+              <p class="logo__text">Ремонт під ключ <br> у Києві та області</p>
+            </div>
 
-						<div class="header__social-networks social-networks">
-							<p class="social-networks__text">Є питання? задайте безпосередньо</p>
-							<a href="https://www.facebook.com/profile.php?id=100002417006675" class="social-networks__icon">
-								<img src="./image/header/icon-facebook.svg" alt="facebook">
-							</a>
-							<a href="https://www.instagram.com/nikiforov_pro/?igshid=Zjc2ZTc4Nzk%3D" class="social-networks__icon">
-								<img src="./image/header/icon-instagram.svg" alt="instagtrm">
-							</a>
-							<a href="#" class="social-networks__icon">
-								<img src="./image/header/icon-telegram.svg" alt="telegram">
-							</a>
-						</div>
+            <div class="header__social-networks social-networks">
+              <p class="social-networks__text">Є питання? задайте безпосередньо</p>
+              <a href="https://www.facebook.com/profile.php?id=100002417006675" class="social-networks__icon">
+                <img src="./image/header/icon-facebook.svg" alt="facebook">
+              </a>
+              <a href="https://www.instagram.com/nikiforov_pro/?igshid=Zjc2ZTc4Nzk%3D" class="social-networks__icon">
+                <img src="./image/header/icon-instagram.svg" alt="instagtrm">
+              </a>
+              <a href="https://telegram.me/nikiforov_pro" class="social-networks__icon">
+                <img src="./image/header/icon-telegram.svg" alt="telegram">
+              </a>
+            </div>
 
-						<div class="header__contact contacts">
-							<div class="contacts__items">
-								<a href="tel:+380994762090" class="contacts__number _icon-phone">+38 (099) 476 20 90</a>
-								<a href="mailto:nikiforofff83@gmai.com" class="contacts__mail _icon-envelop">nikiforofff83@gmai.com</a>
-							</div>
-							<p class="contact__text">Щоденно з 10:00 до 17:00</p>
-						</div> 
-						<button type="button" class="icon-menu">
-							<span></span>
-						</button>
-					</div>
-					<nav class="header__nav nav">
-						<ul class="nav__list">
-							<li class="nav__item">
-								<a data-goto=".page__section_1" href="#" class="nav__link">ПРО НАС</a>
-							</li>
+            <div class="header__contact contacts">
+              <div class="contacts__items">
+                <a href="tel:+380994762090" class="contacts__number _icon-phone">+38 (099) 476 20 90</a>
+                <a href="mailto:nikiforofff83@gmai.com" class="contacts__mail _icon-envelop">nikiforofff83@gmai.com</a>
+              </div>
+              <p class="contact__text">Щоденно з 10:00 до 17:00</p>
+            </div>
+            <button type="button" class="icon-menu">
+              <span></span>
+            </button>
+          </div>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a data-goto=".page__section_1" href="#" class="nav__link">ПРО НАС</a>
+              </li>
 
-							<li class="nav__item">
-								<a data-goto=".page__section_2" href="" class="nav__link">НАШІ ПЕРЕВАГИ</a>
-							</li>
+              <li class="nav__item">
+                <a data-goto=".page__section_2" href="" class="nav__link">НАШІ ПЕРЕВАГИ</a>
+              </li>
 
-							<li class="nav__item">
-								<a data-goto=".page__section_3" href="" class="nav__link">ЧОМУ МИ?</a>
-							</li>
+              <li class="nav__item">
+                <a data-goto=".page__section_3" href="" class="nav__link">ЧОМУ МИ?</a>
+              </li>
 
-							<li class="nav__item">
-								<a data-goto=".page__section_4" href="" class="nav__link">ВІДГУКИ</a>
-							</li>
+              <li class="nav__item">
+                <a data-goto=".page__section_4" href="" class="nav__link">ВІДГУКИ</a>
+              </li>
 
-							<li class="nav__item">
-								<a data-goto=".page__section_5" href="" class="nav__link">ПОРТФОЛІО</a>
-							</li>
+              <li class="nav__item">
+                <a data-goto=".page__section_5" href="" class="nav__link">ПОРТФОЛІО</a>
+              </li>
 
-							<li class="nav__item last-item">
-								<a href="#popup-header" class="header__feedback popup-link">ДІЗНАТИСЬ ВАРТІСТЬ</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</header>
-		
-		<section class="hero">
-			<div class="hero__container _container">
-				<h1 class="hero__offer">Ремонт під ключ у Києві та області<br> з гарантією в договорі </h1>
-				<div class="hero__row-btn">
-					<a href="#" class="hero__btn">ДІЗНАТИСЬ ВАРТІСТЬ
-						<span class="_icon-arrow-right2"></span>
-					</a>
-				</div>
-		</section>
+              <li class="nav__item last-item">
+                <a href="#popup-header" class="header__feedback popup-link">ЗАЛИШИТИ ЗАЯВКУ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-		<section class="about-us page__section_1">
-			<div class="about-us__container _container">
-				<h3 class="about-us__title _label">Про нас</h3>
-				<div class="about-us__body">
-					<div class="about-us__columns">
-						<div class="about-us__image _ibg">
-							<img class="about-us__item" src="./image/about-us/logo.jpg" alt="image">
-						</div>
-					</div>
-					<div class="about-us__columns">
-						<div class="about-us__text">
-							<p>Наша компанія розпочала свою діяльність 7 травня 2007 року в Києві.</p> 
-							<p>За ці роки компанія вийшла на хороший рівень надання послуг, на комплексний ремонт під ключ, розробка дизайн-проектів, а також будівництво будинків.</p> 
-							<p>Ми ведемо свою діяльність понад 15 років і прагнемо підтримувати довгострокові відносини з клієнтами. Ми беремо на себе постачання продукції з якісних матеріалів за розумними цінами. Співробітники компанії щороку проходять навчання, щоб відповідати всім тенденціям ринку.</p> 
-							<p>Також, ми надаємо можливість відвідати об'єкти, які вже здані, або які знаходяться в стадії ремонту або будівництві. Щоб ви всі побачили на свої очі – будемо раді вітати Вас у компанії «NIKIFOROV PRO».</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <section class="hero">
+      <div class="hero__container _container">
+        <h1 class="hero__offer">Ремонт під ключ у Києві та області<br> з гарантією в договорі </h1>
+        <div class="hero__row-btn">
+          <a data-goto=".page__section_quiz" href="#" class="hero__btn">ДІЗНАТИСЬ ВАРТІСТЬ
+            <span class="_icon-arrow-right2"></span>
+          </a>
+        </div>
+    </section>
 
-		<section class="process page__section_2">
-			<div class="process__container _container">
-				<h3 class="process__title _label">Як ми працюємо</h3>
-				<div class="process__body">
-					<div class="process__item">
-						<div class="process__image">
-							<img src="./image/process/01.svg" alt="">
-						</div>
-						<p class="process__text">Ви залишаєте заявку, зателефонувавши або оформивши запит через сайт</p>
-						<div class="process__number">1</div>
-					</div>
-					<div class="process__item">
-						<div class="process__image">
-							<img src="./image/process/02.svg" alt="">
-						</div>
-						<p class="process__text">Знайомство, обговорення проекту</p>
-						<div class="process__number">2</div>
-					</div>
-					
-					<div class="process__item">
-						<div class="process__image">
-							<img src="./image/process/03.svg" alt="">
-						</div>
-						<p class="process__text">Укладання договору</p>
-						<div class="process__number">3</div>
-					</div>
+    <section class="about-us page__section_1">
+      <div class="about-us__container _container">
+        <h3 class="about-us__title title _label">Про нас</h3>
+        <div class="about-us__body">
+          <div class="about-us__columns">
+            <div class="about-us__image _ibg">
+              <img class="about-us__item" src="./image/about-us/logo.jpg" alt="image">
+            </div>
+          </div>
+          <div class="about-us__columns">
+            <div class="about-us__text">
+              <p>Наша компанія розпочала свою діяльність 7 травня 2007 року в Києві.</p>
+              <p>За ці роки компанія вийшла на хороший рівень надання послуг, на комплексний ремонт під ключ, розробка
+                дизайн-проектів, а також будівництво будинків.</p>
+              <p>Ми ведемо свою діяльність понад 15 років і прагнемо підтримувати довгострокові відносини з клієнтами.
+                Ми беремо на себе постачання продукції з якісних матеріалів за розумними цінами. Співробітники компанії
+                щороку проходять навчання, щоб відповідати всім тенденціям ринку.</p>
+              <p>Також, ми надаємо можливість відвідати об'єкти, які вже здані, або які знаходяться в стадії ремонту або
+                будівництві. Щоб ви всі побачили на свої очі – будемо раді вітати Вас у компанії «<span>NIKIFOROV PRO</span>».</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-					<div class="process__item">
-						<div class="process__image">
-							<img src="./image/process/04.svg" alt="">
-						</div>
-						<p class="process__text">Розробка дизайн-проекту</p>
-						<div class="process__number">4</div>
-					</div>
+    <section class="process page__section_2">
+      <div class="process__container _container">
+        <h3 class="process__title title _label">Як ми працюємо</h3>
+        <div class="process__body">
+          <div class="process__item">
+            <div class="process__image">
+              <img src="./image/process/01.svg" alt="">
+            </div>
+            <p class="process__text">Ви залишаєте заявку, зателефонувавши або оформивши запит через сайт</p>
+            <div class="process__number">1</div>
+          </div>
+          <div class="process__item">
+            <div class="process__image">
+              <img src="./image/process/02.svg" alt="">
+            </div>
+            <p class="process__text">Знайомство, обговорення проекту</p>
+            <div class="process__number">2</div>
+          </div>
 
-					<div class="process__item">
-						<div class="process__image">
-							<img src="./image/process/05.svg" alt="">
-						</div>
-						<p class="process__text">Авторський нагляд</p>
-						<div class="process__number">5</div>
-					</div>
+          <div class="process__item">
+            <div class="process__image">
+              <img src="./image/process/03.svg" alt="">
+            </div>
+            <p class="process__text">Укладання договору</p>
+            <div class="process__number">3</div>
+          </div>
 
-					<div class="process__item">
-						<div class="process__image">
-							<img src="./image/process/06.svg" alt="">
-						</div>
-						<p class="process__text">Ремонт</p>
-						<div class="process__number">6</div>
-					</div>
+          <div class="process__item">
+            <div class="process__image">
+              <img src="./image/process/04.svg" alt="">
+            </div>
+            <p class="process__text">Розробка дизайн-проекту</p>
+            <div class="process__number">4</div>
+          </div>
 
-					<div class="process__item">
-						<div class="process__image">
-							<img src="./image/process/07.svg" alt="">
-						</div>
-						<p class="process__text">Комплектація</p>
-						<div class="process__number">7</div>
-					</div>
+          <div class="process__item">
+            <div class="process__image">
+              <img src="./image/process/05.svg" alt="">
+            </div>
+            <p class="process__text">Авторський нагляд</p>
+            <div class="process__number">5</div>
+          </div>
 
-					<div class="process__item">
-						<div class="process__image">
-							<img src="./image/process/08.svg" alt="">
-						</div>
-						<p class="process__text">Завершення</p>
-						<div class="process__number">8</div>
-					</div>
-				</div>
-			</div>
-		</section>
+          <div class="process__item">
+            <div class="process__image">
+              <img src="./image/process/06.svg" alt="">
+            </div>
+            <p class="process__text">Ремонт</p>
+            <div class="process__number">6</div>
+          </div>
 
-    <section class="quiz">
+          <div class="process__item">
+            <div class="process__image">
+              <img src="./image/process/07.svg" alt="">
+            </div>
+            <p class="process__text">Комплектація</p>
+            <div class="process__number">7</div>
+          </div>
+
+          <div class="process__item">
+            <div class="process__image">
+              <img src="./image/process/08.svg" alt="">
+            </div>
+            <p class="process__text">Завершення</p>
+            <div class="process__number">8</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quiz page__section_quiz">
       <div class="quiz__container _container">
-        <h3 class="quiz__top-title">Розрахуйте вартість ремонту<br>вашої квартири під ключ</h3>
+        <h3 class="quiz__top-title title">Розрахуйте вартість ремонту<br>вашої квартири під ключ</h3>
         <p class="quiz__subtitle">Це безкоштовно і ні до чого не зобов'язує</p>
         <form class="quiz__form" action="javascript:">
           <fieldset class="quiz__items">
             <h3 class="quiz__title">Ремонт якого об'єкту вас цікавить?</h3>
-            <div class="quiz__item">
-              <div class="quiz__options quiz--options--three">
-                <label for="quiz1-1" class="quiz__option">
-                  <input class="quiz-option-input" type="radio" id="quiz1-1" name="quiz1" value="Квартира">
-                  <div class="quiz-option__wrapper">
-                    <div class="quiz-option__column">
-                      <label class="quiz-option__label">
-                        <img class="quiz-option__image" src="./image/quiz/quiz1-1.jpeg" alt="image">
-                        <input class="quiz-option__r-img" type="radio" name="picture">
-                      </label>
-                    </div>
-                    <p class="quiz-option__info">Квартира</p>
-                  </div>
+            <radio-list-img>
+              <li>
+                <label>
+                    <img src="./image/quiz/quiz1-1.jpeg" alt="img">
+                  
+                  <input type="radio" name="object" value="Квартира">
+                  <i class="_icon-check2"></i>
+                  <p>Квартира</p>
                 </label>
-
-                <label for="quiz1-2" class="quiz__option">
-                  <input class="quiz-option-input" type="radio" id="quiz1-2" name="quiz1" value="Квартира">
-                  <div class="quiz-option__wrapper">
-                    <div class="quiz-option__column">
-                      <label class="quiz-option__label">
-                        <img class="quiz-option__image" src="./image/quiz/quiz1-2.jpeg" alt="image">
-                        <input class="quiz-option__r-img" type="radio" name="picture">
-                      </label>
-                    </div>
-                    <p class="quiz-option__info">Квартира</p>
-                  </div>
+              </li>
+              <li>
+                <label>
+                    <img src="./image/quiz/quiz1-2.jpeg" alt="img">
+                  <input type="radio" name="object" value="Дім">
+                  <i class="_icon-check2"></i>
+                  <p>Дім</p>
                 </label>
-
-                <label for="quiz1-3" class="quiz__option">
-                  <input class="quiz-option-input" type="radio" id="quiz1-3" name="quiz1" value="Квартира">
-                  <div class="quiz-option__wrapper">
-                    <div class="quiz-option__column">
-                      <label class="quiz-option__label">
-                        <img class="quiz-option__image" src="./image/quiz/quiz1-3.jpeg" alt="image">
-                        <input class="quiz-option__r-img" type="radio" name="picture">
-                      </label>
-                    </div>
-                    <p class="quiz-option__info">Квартира</p>
-                  </div>
+              </li>
+              <li>
+                <label>
+                    <img src="./image/quiz/quiz1-3.jpeg" alt="img">
+                  <input type="radio" name="object" value="Нежитлове/комерція">
+                  <i class="_icon-check2"></i>
+                  <p>Нежитлове/комерція</p>
                 </label>
-              </div>
-            </div>
+              </li>
+            </radio-list-img>
             <div class="quiz-option__row-btn">
-              <button class="quiz-option__button">Далі</button>
+              <button type="button" class="quiz-option__button" disabled>Далі</button>
             </div>
           </fieldset>
-          <!-- <fieldset class="quiz__items"></fieldset>
-          <fieldset class="quiz__items"></fieldset>
-          <fieldset class="quiz__items"></fieldset>
-          <fieldset class="quiz__items"></fieldset> -->
+
+          <fieldset class="quiz__items items-short">
+            <h3 class="quiz__title">Вкажіть загальну площу, кв.</h3>
+            <radio-list>
+              <li>
+                <label>
+                  <input type="radio" name="area" value="до 30">
+                  <p class="_icon-check">до 30</p>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="area" value="від 30 до 50">
+                  <p class="_icon-check">від 30 до 50</p>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="area" value="від 50 до 70">
+                  <p class="_icon-check">від 50 до 70</p>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="area" value="від 70 до 90">
+                  <p class="_icon-check">від 70 до 90</p>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="area" value="item4">
+                  <p class="_icon-check">від 90 до 110</p>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="area" value="більше 110">
+                  <p class="_icon-check">більше 110</p>
+                </label>
+              </li>
+            </radio-list>
+            <div class="quiz-option__row-btn">
+              <button type="button" class="quiz-option__button" disabled>Далі</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="quiz__items">
+            <h3 class="quiz__title">Який вид ремонту вас цікавить?</h3>
+            <radio-list-img>
+              <li>
+                <label>
+                  <img src="./image/quiz/quiz3-1.jpeg" alt="img">
+                  <input type="radio" name="task" value="Косметичний ремонт">
+                  <i class="_icon-check2"></i>
+                  <p>Косметичний ремонт</p>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img src="./image/quiz/quiz3-2.jpeg" alt="img">
+                  <input type="radio" name="task" value="Ремонт дизайн-проекту">
+                  <i class="_icon-check2"></i>
+                  <p>Ремонт дизайн-проекту</p>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img src="./image/quiz/quiz3-3.jpeg" alt="img">
+                  <input type="radio" name="task" value="Не знаю, потрібна консультація">
+                  <i class="_icon-check2"></i>
+                  <p>Не знаю, потрібна консультація</p>
+                </label>
+              </li>
+            </radio-list-img>
+            <div class="quiz-option__row-btn">
+              <button type="button" class="quiz-option__button" disabled>Далі</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="quiz__items">
+            <h3 class="quiz__title">Ви вже маєте дизайн-проект?</h3>
+            <radio-list-img>
+              <li>
+                <label>
+                  <img src="./image/quiz/quiz4-1.jpeg" alt="img">
+                  <input type="radio" name="project" value="Так">
+                  <i class="_icon-check2"></i>
+                  <p>Так</p>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img src="./image/quiz/quiz4-2.jpeg" alt="img">
+                  <input type="radio" name="project" value="Ні, і не буде">
+                  <i class="_icon-check2"></i>
+                  <p>Ні, і не буде</p>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img src="./image/quiz/quiz4-3.jpeg" alt="img">
+                  <input type="radio" name="project" value="Планую замовити">
+                  <i class="_icon-check2"></i>
+                  <p class="_icon-check2">Планую замовити</p>
+                </label>
+              </li>
+            </radio-list-img>
+            <div class="quiz-option__row-btn">
+              <button type="button" class="quiz-option__button" disabled>Далі</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="quiz__items items-short">
+            <h3 class="quiz__title">Коли плануєте розпочати ремонт?</h3>
+            <radio-list>
+              <li>
+                <label>
+                  <input type="radio" name="term" value="Протягом тижня (дуже терміново)">
+                  <p class="_icon-check">Протягом тижня (дуже терміново)</p>
+                </label>
+              </li>
+
+              <li>
+                <label>
+                  <input type="radio" name="term" value="Протягом місяця (не так уже і терміново)">
+                  <p class="_icon-check">Протягом місяця (не так уже і терміново)</p>
+                </label>
+              </li>
+
+              <li>
+                <label>
+                  <input type="radio" name="term" value="Чекаємо на ключі від квартири">
+                  <p class="_icon-check">Чекаємо на ключі від квартири</p>
+                </label>
+              </li>
+
+              <li>
+                <label>
+                  <input type="radio" name="term" value="Просто цікавлюсь">
+                  <p class="_icon-check">Просто цікавлюсь</p>
+                </label>
+              </li>
+            </radio-list>
+            <div class="quiz-option__row-btn">
+              <button type="button" class="quiz-option__button" disabled>Далі</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="quiz__items quiz__items--submit">
+            <h3 class="quiz__title">Майже готово!</h3>
+            <div class="quiz__contacts">
+              <p class="quiz__contacts-subtile">Для точного розрахунку залиште свої контактні данні</p>
+              <p><input name="name" class="quiz__contact-name" type="text" placeholder="Ім'я" required
+                pattern="^([a-zA-Z'-]{0,50}|[а-яА-ЯёЁ'-]{0,50}|[А-Яа-яёЁЇїІіЄєҐґ'-]{1,50})$"></p>
+              <p><input name="number" class="quiz__contact-number" type="tel"
+                  placeholder="+38 (_ _ _) _ _ _ - _ _ - _ _"
+                  required pattern="^(\+\d{1,5} ?)?\(?\d{2,3}\)? ?\d{3}( |-)?\d{2}( |-)?\d{2}"></p>
+            </div>
+            <div class="quiz-option__row-btn">
+              <button class="quiz-option-thank" disabled>Надіслати</button>
+              <button type="button" class="quiz-option__button" hidden>Далі</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="quiz__items quiz-thank">
+            <div class="thanks-fone">
+              <div class="quiz__thank thanks">
+                <p class="thanks__top-text">Дякую, ваша заявка прийнята</p>
+                <p class="thanks__bottom-text">ми зв’яжемось з вами найближчим часом</p>
+              </div>
+            </div>
+          </fieldset>
+
         </form>
       </div>
     </section>
 
-		<section class="why-we page__section_3">
-			<div class="why-we__container _container">
-				<div class="why-we__body">
-					<div class="why-we__content">
-						<h3 class="why-we__title"><span>ВИ В</span> РУКАХ ПРОФЕСІОНАЛІВ</h3>
-						<p class="why-we__row-first">Ми пропонуємо якість і досвід, постійну відданість нашим клієнтам.</p>
-						<p class="why-we__row-second">NIKIFOROV PRO — це компанія, що надає клієнтам житлові та комерційні послуги у Києві та області. Пропонуємо всі види Перил, Парканів, Стовпів, Приват панелей, Ворот. Наша команда допоможе вам у виборі покращення вашого будинку.</p>
-					</div>
-					<div class="why-we__slider slider-why-we">
-						<div class="slider-why-we__body swiper-container">
-							<div class="slider-why-we__wrapper swiper-wrapper">
-								<div class="slider-why-we__slide swiper-slide">
-									<div class="slider-why-we__item">
-										<div class="slider-why-we__bg-icon">
-											<img class="slider-why-we__icon" src="./image/why-we/01.svg" alt="icon">
-										</div>
-										<p class="slider-why-we__text">Професійні та кваліфіковані спеціалісти</p>
-									</div>
-								</div>
-	
-								<div class="slider-why-we__slide swiper-slide">
-									<div class="slider-why-we__item">
-										<div class="slider-why-we__bg-icon">
-											<img class="slider-why-we__icon" src="./image/why-we/02.svg" alt="icon">
-										</div>
-										<p class="slider-why-we__text">Конкурентоспроможна ціна</p>
-									</div>
-								</div>
-	
-								<div class="slider-why-we__slide swiper-slide">
-									<div class="slider-why-we__item">
-										<div class="slider-why-we__bg-icon">
-											<img class="slider-why-we__icon" src="./image/why-we/03.svg" alt="icon">
-										</div>
-										<p class="slider-why-we__text">Зв’яжіться з NIKIFOROV PRO і більше ніколи не турбуйтеся про обслуговування</p>
-									</div>
-								</div>
-	
-								<div class="slider-why-we__slide swiper-slide">
-									<div class="slider-why-we__item">
-										<div class="slider-why-we__bg-icon">
-											<img class="slider-why-we__icon" src="./image/why-we/04.svg" alt="icon">
-										</div>
-										<p class="slider-why-we__text">20 років гарантії</p>
-									</div>
-								</div>
-	
-								<div class="slider-why-we__slide swiper-slide">
-									<div class="slider-why-we__item">
-										<div class="slider-why-we__bg-icon">
-											<img class="slider-why-we__icon" src="./image/why-we/05.svg" alt="icon">
-										</div>
-										<p class="slider-why-we__text">Обслуговування клієнтів</p>
-									</div>
-								</div>
-	
-								<div class="slider-why-we__slide swiper-slide">
-									<div class="slider-why-we__item">
-										<div class="slider-why-we__bg-icon">
-											<img class="slider-why-we__icon" src="./image/why-we/06.svg" alt="icon">
-										</div>
-										<p class="slider-why-we__text">Зразкова якість виготовлення продукту</p>
-									</div>
-								</div>
-							</div>
-							<div class="slider-why-we__arrows">
-								<button type="button" class="slider-why-we__arrow slider-arrow_prev _icon-arrow-left"></button>
-								<button type="button" class="slider-why-we__arrow slider-arrow_next _icon-arrow-right"></button>
-							</div>
-							<div class="slider-why-we__dots"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <section class="why-we page__section_3">
+      <div class="why-we__container _container">
+        <div class="why-we__body">
+          <div class="why-we__content">
+            <h3 class="why-we__title title"><span>ВИ В</span> РУКАХ ПРОФЕСІОНАЛІВ</h3>
+            <p class="why-we__row-first">Ми пропонуємо якість і досвід, постійну відданість нашим клієнтам.</p>
+            <p class="why-we__row-second"><span>NIKIFOROV PRO</span> — це компанія, що надає клієнтам житлові та комерційні послуги у
+              Києві та області. Пропонуємо всі види Перил, Парканів, Стовпів, Приват панелей, Ворот. Наша команда
+              допоможе вам у виборі покращення вашого будинку.</p>
+          </div>
+          <div class="why-we__slider slider-why-we">
+            <div class="slider-why-we__body swiper-container">
+              <div class="slider-why-we__wrapper swiper-wrapper">
+                <div class="slider-why-we__slide swiper-slide">
+                  <div class="slider-why-we__item">
+                    <div class="slider-why-we__bg-icon">
+                      <i class="ico _icon-01"></i>
+                    </div>
+                    <p class="slider-why-we__text">Професійні та кваліфіковані спеціалісти</p>
+                  </div>
+                </div>
 
-		<section class="callback">
-			<div class="callback__container _container">
-				<h3 class="callback__title">Залиште заявку на консультацію, або замір та ми ознайомимось<span>з Вашим проектом більш детально</span></h3>
-				<div class="callback__body">
+                <div class="slider-why-we__slide swiper-slide">
+                  <div class="slider-why-we__item">
+                    <div class="slider-why-we__bg-icon">
+                      <i class="ico _icon-02"></i>
+                    </div>
+                    <p class="slider-why-we__text">Конкурентоспроможна ціна</p>
+                  </div>
+                </div>
+
+                <div class="slider-why-we__slide swiper-slide">
+                  <div class="slider-why-we__item">
+                    <div class="slider-why-we__bg-icon">
+                      <i class="ico _icon-03"></i>
+                    </div>
+                    <p class="slider-why-we__text">Зв’яжіться з NIKIFOROV PRO і більше ніколи не турбуйтеся про
+                      обслуговування</p>
+                  </div>
+                </div>
+
+                <div class="slider-why-we__slide swiper-slide">
+                  <div class="slider-why-we__item">
+                    <div class="slider-why-we__bg-icon">
+                      <i class="ico _icon-04"></i>
+                    </div>
+                    <p class="slider-why-we__text">20 років гарантії</p>
+                  </div>
+                </div>
+
+                <div class="slider-why-we__slide swiper-slide">
+                  <div class="slider-why-we__item">
+                    <div class="slider-why-we__bg-icon">
+                      <i class="ico _icon-05"></i>
+                    </div>
+                    <p class="slider-why-we__text">Обслуговування клієнтів</p>
+                  </div>
+                </div>
+
+                <div class="slider-why-we__slide swiper-slide">
+                  <div class="slider-why-we__item">
+                    <div class="slider-why-we__bg-icon">
+                      <i class="ico _icon-06"></i>
+                    </div>
+                    <p class="slider-why-we__text">Зразкова якість виготовлення продукту</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-why-we__arrows">
+                <button type="button" class="slider-why-we__arrow slider-arrow_prev _icon-arrow-left"></button>
+                <button type="button" class="slider-why-we__arrow slider-arrow_next _icon-arrow-right"></button>
+              </div>
+              <div class="slider-why-we__dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="callback">
+      <div class="callback__container _container">
+        <h3 class="callback__title title">Залиште заявку на консультацію, або замір та ми ознайомимось<span> з Вашим проектом
+            більш детально</span></h3>
+        <div class="callback__body">
           <div class="callback__image">
-						<img src="./image/form/form-img.webp" alt="image">
-					</div>
-					<div class="callback__card">
-						<div class="callback__wrapper">
-							<p class="callback__subtitle">Ваш номер телефону</p>
-								<form class="callback__contact form-data" action="javascript:">
-									<p><input name="number" class="callback__number" type="tel" placeholder="+38 (_ _ _) _ _ _ - _ _ - _ _" pattern="^(\+\d{1,5} ?)?\(?\d{2,3}\)? ?\d{3}( |-)?\d{2}( |-)?\d{2}"></p>
-									<p><button class="callback__button">Відправити заявку</button></p>
-								</form>
-                <input type="checkbox" name="" id="callback-chack">
-                <label for="callback-chack" class="callback__text">Ви погоджуєтесь на <span>умови обробки персональних даних</span></label>
-                <!-- <p class="callack__text">Ви погоджуєтесь на <span>умови обробки персональних даних</span></p> -->
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</section>
+            <img src="./image/form/form-img.jpeg" alt="image">
+          </div>
+          <div class="callback__card">
+            <div class="callback__wrapper">
+              <p class="callback__subtitle">Ваш номер телефону</p>
+              <form class="callback__contact form-data" action="javascript:">
+                <p><input name="number" class="callback__number" type="tel" placeholder="+38 (_ _ _) _ _ _ - _ _ - _ _"
+                  required pattern="^(\+\d{1,5} ?)?\(?\d{2,3}\)? ?\d{3}( |-)?\d{2}( |-)?\d{2}"></p>
+                <p><button class="callback__button">Відправити заявку</button></p>
+              </form>
+              <input type="checkbox" name="" id="callback-chack">
+              <label for="callback-chack" class="callback__text">Ви погоджуєтесь на <span>умови обробки персональних
+                  даних</span></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="reviews page__section_4">
       <div class="reviews__container _container">
-        <h3 class="reviews__title">Відгуки наших кліентів   :</h3>
+        <h3 class="reviews__title title">Відгуки наших клієнтів :</h3>
         <div class="reviews__body">
           <div class="reviews__row reviews-line--right">
             <div class="reviews__item reviews__item--left reviews__item-first">
               <div class="reviews__content">
                 <div class="reviews__subtitle">
                   <span class="reviews__name">Іван</span>
-                  <span class="_icon-star_icon"></span><span class="_icon-star_icon"></span><span class="_icon-star_icon"></span><span class="_icon-star_icon"></span><span class="_icon-star_icon"></span>
+                  <span class="_icon-star_icon"></span><span class="_icon-star_icon"></span><span
+                    class="_icon-star_icon"></span><span class="_icon-star_icon"></span><span
+                    class="_icon-star_icon"></span>
                 </div>
-                <p class="reviews__text">Александр выполнял комплексный ремонт в квартире 90m2. От А до Я. Все сделали по высшему разряду. Все мастера ускоспециализированы и знают толк в своих обязанностей. рекомендую бригады Никифоров_ПРО
-                  </p>
+                <p class="reviews__text">Александр выполнял комплексный ремонт в квартире 90m2. От А до Я. Все сделали
+                  по высшему разряду. Все мастера ускоспециализированы и знают толк в своих обязанностей. рекомендую
+                  бригады Никифоров_ПРО
+                </p>
               </div>
             </div>
             <div class="reviews__item reviews__item--left">
               <div class="reviews__content">
                 <div class="reviews__subtitle">
                   <span class="reviews__name">Володимир</span>
-                  <span class="_icon-star_icon"></span><span class="_icon-star_icon"></span><span class="_icon-star_icon"></span><span class="_icon-star_icon"></span><span class="_icon-star_icon"></span>
+                  <span class="_icon-star_icon"></span><span class="_icon-star_icon"></span><span
+                    class="_icon-star_icon"></span><span class="_icon-star_icon"></span><span
+                    class="_icon-star_icon"></span>
                 </div>
-                <p class="reviews__text">Щоб сказати про Сашу все чого він вартий треба зняти фільм, але якщо в форматі текстового відгуку то так: 
-                  1. Супер людина і супер спеціаліст, який у якості виконаних робіт зацікавлений більше ніж замовник. 
+                <p class="reviews__text">Щоб сказати про Сашу все чого він вартий треба зняти фільм, але якщо в форматі
+                  текстового відгуку то так:
+                  1. Супер людина і супер спеціаліст, який у якості виконаних робіт зацікавлений більше ніж замовник.
                   2. Економить купу часу, бо організовує всю роботу і доставку матеріалів без зайвої участі замовника.
-                  3. Є косяк - чесно сказав і виправив, нічого не приховується. Звідси і повна відповідальність за виконані роботи. 
-                  4. Після кожного етапу виконаних робіт, після кожного робочого дня в квартирі було так чисто, що можна було вже жити. А після фіналу усіх робіт, які виконувала Сашина команда, потрібно було просто протерти пил, зробити вологе приирання і заселятись. Ніяких послуг прибирання "Після ремонту" просто не було потрібно. 
+                  3. Є косяк - чесно сказав і виправив, нічого не приховується. Звідси і повна відповідальність за
+                  виконані роботи.
+                  4. Після кожного етапу виконаних робіт, після кожного робочого дня в квартирі було так чисто, що можна
+                  було вже жити. А після фіналу усіх робіт, які виконувала Сашина команда, потрібно було просто протерти
+                  пил, зробити вологе приирання і заселятись. Ніяких послуг прибирання "Після ремонту" просто не було
+                  потрібно.
                   5. Як чоловік, відмічу, що Саша працює з ТОП інструментами, це, як на мене, багато про що говорить.
-                  6. І окреме дякую команді, всі просто приємні і цікаві, як люди, які не просто роблять ремонт у вашій оселі, а і вже закладають в ній гарну і позитивну атмосферу. Безмежно вдячний за виконану роботу.Сподіваюсь, ще попрацюємо. 
-                  </p>
+                  6. І окреме дякую команді, всі просто приємні і цікаві, як люди, які не просто роблять ремонт у вашій
+                  оселі, а і вже закладають в ній гарну і позитивну атмосферу. Безмежно вдячний за виконану
+                  роботу.Сподіваюсь, ще попрацюємо.
+                </p>
               </div>
             </div>
           </div>
@@ -377,20 +561,31 @@
               <div class="reviews__content">
                 <div class="reviews__subtitle">
                   <span class="reviews__name">Генадій</span>
-                  <span class="_icon-star_icon"></span><span class="_icon-star_icon"></span><span class="_icon-star_icon"></span><span class="_icon-star_icon"></span><span class="_icon-star_icon"></span>
+                  <span class="_icon-star_icon"></span><span class="_icon-star_icon"></span><span
+                    class="_icon-star_icon"></span><span class="_icon-star_icon"></span><span
+                    class="_icon-star_icon"></span>
                 </div>
-                <p class="reviews__text">Замовляв у Олександра та його команди комплексний ремонт в новобудові ЖК Файна Таун. Перед початком робіт Олександр ознайомився з дизайн проектом, назвав терміни виконання та орієнтовну ціну ремонту. Команда професіоналів виконує весь спектр послуг починаючи з штукатурними, закінчуючи облицюванням та малярними роботами. Олександр має великий досвід і тому протягом ремонту я отримав консультації та поради з приводу використання тих чи інших матеріалів. Також команда підтримує чистоту на об'єкті і з турботою відноситься до майна. Всі роботи виконанні дуже якісно і згідно сучасних тенденцій. Задоволений роботою з Олександром та сміливо рекомендую.
-                  </p>
+                <p class="reviews__text">Замовляв у Олександра та його команди комплексний ремонт в новобудові ЖК Файна
+                  Таун. Перед початком робіт Олександр ознайомився з дизайн проектом, назвав терміни виконання та
+                  орієнтовну ціну ремонту. Команда професіоналів виконує весь спектр послуг починаючи з штукатурними,
+                  закінчуючи облицюванням та малярними роботами. Олександр має великий досвід і тому протягом ремонту я
+                  отримав консультації та поради з приводу використання тих чи інших матеріалів. Також команда підтримує
+                  чистоту на об'єкті і з турботою відноситься до майна. Всі роботи виконанні дуже якісно і згідно
+                  сучасних тенденцій. Задоволений роботою з Олександром та сміливо рекомендую.
+                </p>
               </div>
             </div>
             <div class="reviews__item reviews__item--right">
               <div class="reviews__content">
                 <div class="reviews__subtitle">
                   <span class="reviews__name">Світлана</span>
-                  <span class="_icon-star_icon"></span><span class="_icon-star_icon"></span><span class="_icon-star_icon"></span><span class="_icon-star_icon"></span><span class="_icon-star_icon"></span>
+                  <span class="_icon-star_icon"></span><span class="_icon-star_icon"></span><span
+                    class="_icon-star_icon"></span><span class="_icon-star_icon"></span><span
+                    class="_icon-star_icon"></span>
                 </div>
-                <p class="reviews__text">Отличный мастер ! Прекрасный специалист , с чудесной командой. Профессионалы с большой буквы. Ремонт в удовольствие - это про них.
-                  </p>
+                <p class="reviews__text">Відмінний майстер! Прекрасний спеціаліст, з чудовою командою. Професіонали з
+                  великої літери. Ремонт в насолоду - це про них.
+                </p>
               </div>
             </div>
           </div>
@@ -398,7 +593,182 @@
       </div>
     </section>
 
-		<footer class="footer">
+    <section class="gallery  page__section_5">
+      <div class="gallery__container _container">
+        <h3 class="gallery__title title">Наші роботи</h3>
+        <div class="gallery__body">
+          <div class="gallery__item">
+            <div class="gallery__row">
+              <div class="gallery__column-fist">
+                <a data-fancybox="gallery" href="./image/gallery/g1/01.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g1/01.jpg"></a>
+              </div>
+              <div class="gallery__column-second">
+                <a data-fancybox="gallery" href="./image/gallery/g1/02.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g1/02.jpg"></a>
+                <a data-fancybox="gallery" href="./image/gallery/g1/03.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g1/03.jpg"></a>
+                <a data-fancybox="gallery" href="./image/gallery/g1/04.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g1/04.jpg"></a>
+                <a data-fancybox="gallery" href="./image/gallery/g1/05.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g1/05.jpg"></a>
+              </div>
+            </div>
+            <a data-fancybox="gallery" href="./image/gallery/g1/06.jpg" class="gallery__link-img hide"><img
+                src="./image/gallery/g1/06.jpg"></a>
+            <a data-fancybox="gallery" href="./image/gallery/g1/07.jpg" class="gallery__link-img hide"><img
+                src="./image/gallery/g1/07.jpg"></a>
+            <a data-fancybox="gallery" href="./image/gallery/g1/08.jpg" class="gallery__link-img hide"><img
+                src="./image/gallery/g1/08.jpg"></a>
+            <a data-fancybox="gallery" href="./image/gallery/g1/09.jpg" class="gallery__link-img hide"><img
+                src="./image/gallery/g1/09.jpg"></a>
+            <a data-fancybox="gallery" href="./image/gallery/g1/10.jpg" class="gallery__link-img hide"><img
+                src="./image/gallery/g1/10.jpg"></a>
+            <div class="gallery__name-item">
+              <p>ЖК Венеція</p>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <div class="gallery__row">
+              <div class="gallery__column-fist">
+                <a data-fancybox="gallery2" href="./image/gallery/g2/01.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g2/01.jpg"></a>
+              </div>
+              <div class="gallery__column-second">
+                <a data-fancybox="gallery2" href="./image/gallery/g2/02.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g2/02.jpg"></a>
+                <a data-fancybox="gallery2" href="./image/gallery/g2/03.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g2/03.jpg"></a>
+                <a data-fancybox="gallery2" href="./image/gallery/g2/04.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g2/04.jpg"></a>
+                <a data-fancybox="gallery2" href="./image/gallery/g2/05.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g2/05.jpg"></a>
+              </div>
+            </div>
+            <a data-fancybox="gallery2" href="./image/gallery/g2/06.jpg" class="gallery__link-img hide"><img
+                src="./image/gallery/g2/06.jpg"></a>
+            <a data-fancybox="gallery2" href="./image/gallery/g2/07.jpg" class="gallery__link-img hide"><img
+                src="./image/gallery/g2/07.jpg"></a>
+            <a data-fancybox="gallery2" href="./image/gallery/g2/08.jpg" class="gallery__link-img hide"><img
+                src="./image/gallery/g2/08.jpg"></a>
+            <div class="gallery__name-item">
+              <p>ЖК Crystal Avenue</p>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <div class="gallery__row">
+              <div class="gallery__column-fist">
+                <a data-fancybox="gallery3" href="./image/gallery/g3/01.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g3/01.jpg"></a>
+              </div>
+              <div class="gallery__column-second">
+                <a data-fancybox="gallery3" href="./image/gallery/g3/02.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g3/02.jpg"></a>
+                <a data-fancybox="gallery3" href="./image/gallery/g3/03.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g3/03.jpg"></a>
+                <a data-fancybox="gallery3" href="./image/gallery/g3/04.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g3/04.jpg"></a>
+                <a data-fancybox="gallery2" href="./image/gallery/g3/05.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g3/05.jpg"></a>
+              </div>
+            </div>
+            <a data-fancybox="gallery3" href="./image/gallery/g3/06.jpg" class="gallery__link-img hide"><img
+                src="./image/gallery/g3/06.jpg"></a>
+            <a data-fancybox="gallery3" href="./image/gallery/g3/07.jpg" class="gallery__link-img hide"><img
+                src="./image/gallery/g3/07.jpg"></a>
+            <a data-fancybox="gallery3" href="./image/gallery/g3/08.jpg" class="gallery__link-img hide"><img
+                src="./image/gallery/g3/08.jpg"></a>
+            <div class="gallery__name-item">
+              <p>ЖК Crystal Avenue</p>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <div class="gallery__row">
+              <div class="gallery__column-fist">
+                <a data-fancybox="gallery4" href="./image/gallery/g4/01.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g4/01.jpg"></a>
+              </div>
+              <div class="gallery__column-second">
+                <a data-fancybox="gallery4" href="./image/gallery/g4/02.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g4/02.jpg"></a>
+                <a data-fancybox="gallery4" href="./image/gallery/g4/03.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g4/03.jpg"></a>
+                <a data-fancybox="gallery4" href="./image/gallery/g4/04.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g4/04.jpg"></a>
+                <a data-fancybox="gallery4" href="./image/gallery/g4/05.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g4/05.jpg"></a>
+              </div>
+            </div>
+            <a data-fancybox="gallery4" href="./image/gallery/g4/06.jpg" class="gallery__link-img hide"><img
+                src="./image/gallery/g4/06.jpg"></a>
+            <a data-fancybox="gallery4" href="./image/gallery/g4/07.jpg" class="gallery__link-img hide"><img
+                src="./image/gallery/g4/07.jpg"></a>
+            <a data-fancybox="gallery4" href="./image/gallery/g4/08.jpg" class="gallery__link-img hide"><img
+                src="./image/gallery/g4/08.jpg"></a>
+            <div class="gallery__name-item">
+              <p>ЖК Paradise Avenue</p>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <div class="gallery__row">
+              <div class="gallery__column-fist">
+                <a data-fancybox="gallery5" href="./image/gallery/g5/01.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g5/01.jpg"></a>
+              </div>
+              <div class="gallery__column-second">
+                <a data-fancybox="gallery5" href="./image/gallery/g5/02.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g5/02.jpg"></a>
+                <a data-fancybox="gallery5" href="./image/gallery/g5/03.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g5/03.jpg"></a>
+                <a data-fancybox="gallery5" href="./image/gallery/g5/04.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g5/04.jpg"></a>
+                <a data-fancybox="gallery5" href="./image/gallery/g5/05.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g5/05.jpg"></a>
+              </div>
+            </div>
+            <a data-fancybox="gallery5" href="./image/gallery/g5/06.jpg" class="gallery__link-img hide"><img
+                src="./image/gallery/g5/06.jpg"></a>
+            <a data-fancybox="gallery5" href="./image/gallery/g5/07.jpg" class="gallery__link-img hide"><img
+                src="./image/gallery/g5/07.jpg"></a>
+            <a data-fancybox="gallery5" href="./image/gallery/g5/08.jpg" class="gallery__link-img hide"><img
+                src="./image/gallery/g5/08.jpg"></a>
+            <div class="gallery__name-item">
+              <p>ЖК Варшавский Плюс</p>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <div class="gallery__row">
+              <div class="gallery__column-fist">
+                <a data-fancybox="gallery6" href="./image/gallery/g6/01.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g6/01.jpg"></a>
+              </div>
+              <div class="gallery__column-second">
+                <a data-fancybox="gallery6" href="./image/gallery/g6/02.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g6/02.jpg"></a>
+                <a data-fancybox="gallery6" href="./image/gallery/g6/03.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g6/03.jpg"></a>
+                <a data-fancybox="gallery6" href="./image/gallery/g6/04.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g6/04.jpg"></a>
+                <a data-fancybox="gallery6" href="./image/gallery/g6/05.jpg" class="gallery__link-img"><img
+                    src="./image/gallery/g6/05.jpg"></a>
+              </div>
+            </div>
+            <a data-fancybox="gallery5" href="./image/gallery/g6/06.jpg" class="gallery__link-img hide"><img
+                src="./image/gallery/g6/06.jpg"></a>
+            <div class="gallery__name-item">
+              <p>ЖК Utlandia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
       <div class="footer__container _container">
         <div class="footer__body">
           <div class="footer__column">
@@ -406,26 +776,24 @@
             <div class="footer__item-form">
               <form class="footer__form" action="javascript:">
                 <p class="footer__t-form">Зв’яжіться з нами і протягом декількох хвилин менеджер зв’яжеться з вами</p>
-                <p><input name="name" class="footer__name-form" type="text" placeholder="Ім'я"></p>
-                <p><input name="number" class="footer__number-form" type="tel" placeholder="Телефон"></p>
+                <p><input name="name" class="footer__name-form" type="text" placeholder="Ім'я" required
+                  pattern="^([a-zA-Z'-]{0,50}|[а-яА-ЯёЁ'-]{0,50}|[А-Яа-яёЁЇїІіЄєҐґ'-]{1,50})$"></p>
+                <p><input name="number" class="footer__number-form" type="tel" placeholder="Телефон" required pattern="^(\+\d{1,5} ?)?\(?\d{2,3}\)? ?\d{3}( |-)?\d{2}( |-)?\d{2}"></p>
                 <p class="footer__row-btn"><button class="footer__button-form">Надіслати</button></p>
               </form>
             </div>
           </div>
-         <div class="footer__column">
+          <div class="footer__column">
             <h3 class="footer__title">Як нас знайти</h3>
             <div class="footer__item-contacts">
               <ul class="footer__list-contacts">
                 <li class="footer__item-to-list">
-                  <p class="footer__subtitle">Адреса:</p>
-                  <a href="#" class="footer__adress">Дубровка 9/651</a>
-                </li>
-
-                <li class="footer__item-to-list">
                   <p class="footer__subtitle">Контакти:</p>
                   <div class="footer__row-tel-mail">
-                    <a href="tel:+380994762090" class="footer__number contacts__number _icon-phone">+38 (099) 476 20 90</a>
-                    <a href="mailto:nikiforofff83@gmai.com" class="footer__mail contacts__mail _icon-envelop">nikiforofff83@gmai.com</a>
+                    <a href="tel:+380994762090" class="footer__number contacts__number _icon-phone">+38 (099) 476 20
+                      90</a>
+                    <a href="mailto:nikiforofff83@gmai.com"
+                      class="footer__mail contacts__mail _icon-envelop">nikiforofff83@gmai.com</a>
                   </div>
                 </li>
 
@@ -434,37 +802,53 @@
                   <a href="https://www.facebook.com/profile.php?id=100002417006675" class="social-networks__icon">
                     <img src="./image/header/icon-facebook.svg" alt="facebook">
                   </a>
-                  <a href="https://www.instagram.com/nikiforov_pro/?igshid=Zjc2ZTc4Nzk%3D" class="social-networks__icon">
+                  <a href="https://www.instagram.com/nikiforov_pro/?igshid=Zjc2ZTc4Nzk%3D"
+                    class="social-networks__icon">
                     <img src="./image/header/icon-instagram.svg" alt="instagtrm">
                   </a>
-                  <a href="#" class="social-networks__icon">
+                  <a href="https://telegram.me/nikiforov_pro" class="social-networks__icon">
                     <img src="./image/header/icon-telegram.svg" alt="telegram">
                   </a>
                 </li>
               </ul>
-              <img class="footer__image" src="./image/footer/01.png" alt="">
             </div>
-         </div>
+          </div>
         </div>
       </div>
-      
+      <img class="footer__image" src="./image/footer/1.png" alt="">
     </footer>
 
-		<div id="popup-header" class="popup">
-			<div class="popup__body">
-				<div class="popup__content">
-					<a href="#" class="popup-header__close close-popup">&times;</a>
-					<h4 class="popap-header__title">Ми зв'яжемося з Вами найближчим часом!</h4>
-					<form class="popup-header__form" action="javascript:">
-						<p><input name="name" class="popup-header__name" type="text" placeholder="Ім'я"></p>
-						<p><input name="number" class="popup-header__number" type="tel" placeholder="+38 (_ _ _) _ _ _ - _ _ - _ _" pattern="^(\+\d{1,5} ?)?\(?\d{2,3}\)? ?\d{3}( |-)?\d{2}( |-)?\d{2}"></p>
-						<p><button class="popup-header__button">Надіслати</button></p>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div id="popup-header" class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <a href="#" class="popup-header__close close-popup">&times;</a>
+          <h4 class="popap-header__title">Ми зв'яжемося з Вами найближчим часом!</h4>
+          <form class="popup-header__form" action="javascript:">
+            <p><input name="name" class="popup-header__name" type="text" placeholder="Ім'я" required
+                pattern="^([a-zA-Z'-]{1,50}|[а-яА-ЯёЁ'-]{1,50}|[А-Яа-яёЁЇїІіЄєҐґ'-]{1,50})$"></p>
+            <p><input name="number" class="popup-header__number" type="tel" placeholder="+38 (_ _ _) _ _ _ - _ _ - _ _"
+                required pattern="^(\+\d{1,5} ?)?\(?\d{2,3}\)? ?\d{3}( |-)?\d{2}( |-)?\d{2}"></p>
+            <p>
+              <button class="popup-header__button">Надіслати</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="popup-thank" class="thanks-container">
+      <div class="thanks-fone">
+        <div class="thanks">
+          <p class="thanks__top-text">Дякую, ваша заявка прийнята</p>
+          <p class="thanks__bottom-text">ми зв’яжемось з вами найближчим часом</p>
+          <button class="thanks__close close-popup">&times;</button>
+        </div>
+      </div>
+    </div>
 
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
+
 </html>

@@ -30,6 +30,7 @@ if (popupCloseIcon.length > 0) {
 }
 
 
+
 function popupOpen(curentPopup) {
   if (curentPopup && unlock) {
     const popupActive = document.querySelector('.popup.open')
@@ -84,10 +85,14 @@ function closeMenuBurger() {
 
 //scroll on click
 const menuLinks = document.querySelectorAll('.nav__link[data-goto]')
+const heroBtn = document.querySelector('.hero__btn[data-goto]')
 if (menuLinks.length > 0) {
   menuLinks.forEach(menuLink => {
     menuLink.addEventListener('click', onMenuLinkClick)
   })
+
+  heroBtn.addEventListener('click', onMenuLinkClick)
+
 
   function onMenuLinkClick(e) {
     const menuLink = e.target
@@ -135,6 +140,7 @@ new Swiper('.slider-why-we__body', {
 
 //telegram
 const headerForm = document.querySelector('.popup-header__form')
+const quizForm = document.querySelector('.quiz__form')
 const callbackForm = document.querySelector('.callback__contact')
 const footerForm = document.querySelector('.footer__form')
 
@@ -144,13 +150,12 @@ const chatId = -1001825316171
 const url = "https://api.telegram.org/bot" + token + "/sendMessage"
 
 
+
 headerForm.onsubmit = () => {
-  (function () {
-    let name = document.querySelector(".popup-header__name").value;
-    let number = document.querySelector(".popup-header__number").value;
-    
-    message = "Name: " + name + "\nnumber: " + number;
-  }())
+  const name = document.querySelector(".popup-header__name").value;
+  const number = document.querySelector(".popup-header__number").value;
+
+  const message = "ім'я: " + name + "\nномер: " + number;
 
   headerForm.reset()
   popupClose(headerForm.closest('.popup'))
@@ -164,12 +169,10 @@ headerForm.onsubmit = () => {
 }
 
 callbackForm.onsubmit = () => {
-  (function () {
-    let number = document.querySelector(".callback__number").value;
-    
-    message = "number: " + number;
-  }())
+    const number = document.querySelector(".callback__number").value;
 
+    const message = "номер: " + number;
+  
   callbackForm.reset()
 
   fetch(url, {
@@ -181,13 +184,11 @@ callbackForm.onsubmit = () => {
 }
 
 footerForm.onsubmit = () => {
-  (function () {
-    let name = document.querySelector(".footer__name-form").value;
-    let number = document.querySelector(".footer__number-form").value;
+    const name = document.querySelector(".footer__name-form").value;
+    const number = document.querySelector(".footer__number-form").value;
 
-    message = "Name: " + name + "\nnumber: " + number;
-  }())
-  
+    const message = "ім'я: " + name + "\nномер: " + number;
+
   footerForm.reset()
 
   fetch(url, {
@@ -199,6 +200,66 @@ footerForm.onsubmit = () => {
 }
 
 
+// quiz
+const quizButtons = document.querySelectorAll('.quiz-option__button')
+const quizItems = quizForm.querySelectorAll('.quiz__items')
+const quizThank = quizForm.querySelectorAll('.quiz-thank')
 
+
+showDefaultFirst()
+
+quizForm.addEventListener('change', enableButton)
+quizForm.addEventListener('submit', submitQuizForm)
+
+quizButtons.forEach(btn => btn.addEventListener('click', showNextSlide))
+
+function showDefaultFirst() {
+  quizForm.querySelector('form > fieldset').classList.add('_active')
+}
+
+function enableButton(e) {
+  e.target.closest('.quiz__items').querySelector('[disabled]')?.removeAttribute('disabled')
+}
+
+function submitQuizForm() {
+  const formData = new FormData(quizForm)
+  const data = Object.fromEntries(formData)
+  const message = `об'єкт: ${data.object}, \nплоща: ${data.area}, \nзадача: ${data.task}, \nпроект: ${data.project}, \nтермін: ${data.term}, \nномер: ${data.number}, \nім'я: ${data.name}`
+  // `Об'єкт: Дім, площа: від 30 до 50, задача: Ремонт дизайн-проекту, проект: Ні, і не буде, термін: Протягом місяця (не так уже і терміново), номер: 0988383828, ім'я: Микола`
+  const obj = { chat_id: chatId, text: message }
+
+  fetch(url, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(obj) })
+
+  quizForm.querySelector('[hidden]').click()
+}
+
+function showNextSlide() {
+  const current = quizForm.querySelector('._active')
+
+  current.classList.remove('_active')
+  current.nextElementSibling.classList.add('_active')
+
+}
+
+//open thank page 
+const thanksContainer = document.querySelector('.thanks-container')
+const thanksClose = document.querySelector('.thanks__close')
+
+const popupHeaderForm = document.querySelector('.popup-header__form')
+const callbackContact = document.querySelector('.callback__contact')
+
+popupHeaderForm.addEventListener('submit', openThankPage)
+callbackContact.addEventListener('submit', openThankPage)
+footerForm.addEventListener('submit', openThankPage)
+
+thanksClose.addEventListener('click', closeThankPage)
+
+function openThankPage() {
+  thanksContainer.classList.add('_open')
+}
+
+function closeThankPage() {
+  thanksContainer.classList.remove('_open')
+}
 
 
