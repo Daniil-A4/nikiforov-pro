@@ -3,7 +3,7 @@ radio-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 radio-list li {
@@ -15,56 +15,51 @@ radio-list li {
 }
 
 radio-list label {
-  display: block;
+  display: flex;
   height: 100%;
+  position: relative;
 }
 
 radio-list input {
   display: none;
 }
 
+radio-list i::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(15%, -50%);
+}
+radio-list i::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 22px;
+  height: 22px;
+  background-color: #fdfbfb;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
 radio-list p {
-  position: relative;
-  height: 100%;
+  padding-left: 50px;
   display: flex;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 5px;
-  justify-content: start;
-}
-
-radio-list p::before,
-radio-list p::after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 50%;
-}
-
-radio-list p::before {
-  width: 20px;
-  height: 20px;
-  background-color: #fcfcfc;
-}
-
-radio-list p::after {
-  width: 10px;
-  height: 10px;
-  transform: translate(52%, -10%);
 }
 
 ._icon-check::after {
   content: "\e901";
   color: #d2d2d2;
-  top: 34%;
-  left: 6px;
 }
 
 radio-list :checked+._icon-check::after {
-  color: var(--blue-color);
+  color: black;
+}
+
+radio-list label:hover {
+  box-shadow: 1px -1px 40px rgba(0, 2, 58, 0.45);
 }
 
 @media (max-width: 767.98px) {
@@ -93,7 +88,6 @@ radio-list :checked+._icon-check::after {
 
 /* ============================================================ */
 radio-list-img {
-  /* margin: auto; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -164,7 +158,11 @@ radio-list-img input {
 }
 
 radio-list-img :checked+._icon-check2::after {
-  color: var(--blue-color);
+  color: black;
+}
+
+radio-list-img label:hover{
+  box-shadow: 1px -1px 40px rgba(0, 2, 58, 0.45);
 }
 
 @media (min-width: 1880px) {
@@ -205,10 +203,6 @@ radio-list-img :checked+._icon-check2::after {
 }
 
 @media (max-width: 767.98px) {
-
-  /* .quiz__title {
-    margin-bottom: -125px;
-  } */
   .quiz__items._active {
     height: 490px;
     width: 100%;

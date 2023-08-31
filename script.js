@@ -2,6 +2,7 @@
 const popupLinks = document.querySelectorAll('.popup-link')
 const body = document.querySelector('.body')
 const lockPadding = document.querySelectorAll('.lock-padding')
+const wrapper = document.querySelector('.wrapper')
 
 let unlock = true;
 
@@ -40,6 +41,7 @@ function popupOpen(curentPopup) {
 			bodyLock()
 		} */
     curentPopup.classList.add('open')
+    wrapper.classList.add('_lock')
     curentPopup.addEventListener('click', function (e) {
       if (!e.target.closest('.popup__content')) {
         popupClose(e.target.closest('.popup'))
@@ -50,6 +52,7 @@ function popupOpen(curentPopup) {
 
 function popupClose(popupActive, doUnlock = true) {
   if (unlock) {
+    wrapper.classList.remove('_lock')
     popupActive.classList.remove('open');
     /* if (doUnlock) {
       bodyUnLock()
@@ -69,6 +72,7 @@ const iconMenu = document.querySelector('.icon-menu')
 const menuBody = document.querySelector('.header__nav')
 if (iconMenu) {
   iconMenu.addEventListener('click', function (e) {
+    document.documentElement.classList.toggle('_lock')
     iconMenu.classList.toggle('_active')
     menuBody.classList.toggle('_active')
   })
@@ -79,8 +83,10 @@ const buttons = document.querySelectorAll('.nav__item')
 buttons.forEach(button => button.addEventListener('click', closeMenuBurger))
 
 function closeMenuBurger() {
+  document.documentElement.classList.remove('_lock')
   iconMenu.classList.remove('_active')
   menuBody.classList.remove('_active')
+
 }
 
 //scroll on click
@@ -169,10 +175,10 @@ headerForm.onsubmit = () => {
 }
 
 callbackForm.onsubmit = () => {
-    const number = document.querySelector(".callback__number").value;
+  const number = document.querySelector(".callback__number").value;
 
-    const message = "номер: " + number;
-  
+  const message = "номер: " + number;
+
   callbackForm.reset()
 
   fetch(url, {
@@ -184,10 +190,10 @@ callbackForm.onsubmit = () => {
 }
 
 footerForm.onsubmit = () => {
-    const name = document.querySelector(".footer__name-form").value;
-    const number = document.querySelector(".footer__number-form").value;
+  const name = document.querySelector(".footer__name-form").value;
+  const number = document.querySelector(".footer__number-form").value;
 
-    const message = "ім'я: " + name + "\nномер: " + number;
+  const message = "ім'я: " + name + "\nномер: " + number;
 
   footerForm.reset()
 
@@ -256,10 +262,18 @@ thanksClose.addEventListener('click', closeThankPage)
 
 function openThankPage() {
   thanksContainer.classList.add('_open')
+  document.documentElement.classList.add('_lock')
 }
 
 function closeThankPage() {
   thanksContainer.classList.remove('_open')
+  document.documentElement.classList.remove('_lock')
 }
+
+
+
+
+
+
 
 
